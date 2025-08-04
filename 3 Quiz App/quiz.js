@@ -55,7 +55,7 @@ function showQuestion(){
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". "+ currentQuestion.question;
 
-      currentQuestion.answer.forEach(answer =>{
+        currentQuestion.answer.forEach(answer =>{
         const button = document.createElement("button");
         button.innerHTML = answer.text;
         button.classList.add("btn");
@@ -83,7 +83,7 @@ function selectAnswer(e){
         selectedBtn.classList.add("incorrect")
     }
     Array.from(answerButtons.children).forEach(button =>{
-        if(button.dataset.correct === "t rue"){
+        if(button.dataset.correct === "true"){
             button.classList.add("correct");
         }
         button.disabled = true;
