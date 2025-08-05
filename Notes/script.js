@@ -22,7 +22,6 @@ createBtn.addEventListener('click',()=>{
 })
 
 notesContainer.addEventListener("click",function(e){
-    console.log(e.target.tagName)
     if(e.target.tagName === "IMG"){
         e.target.parentElement.remove();
         updateStorage()
